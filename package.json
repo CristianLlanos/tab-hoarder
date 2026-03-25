@@ -10,7 +10,8 @@
     "rebuild": "npx @electron/rebuild -f -w better-sqlite3",
     "package": "electron-vite build && electron-builder --mac --dir",
     "package:dmg": "electron-vite build && electron-builder --mac",
-    "start": "open \"release/mac-arm64/Tab Hoarder.app\""
+    "start": "open \"release/mac-arm64/Tab Hoarder.app\"",
+    "install:app": "cp -R \"release/mac-arm64/Tab Hoarder.app\" /Applications/ && echo 'Installed to /Applications/Tab Hoarder.app'"
   },
   "keywords": [],
   "author": "Cris",
