@@ -1,0 +1,26 @@
+{
+  "name": "tab-hoarder",
+  "version": "1.0.0",
+  "description": "Catalogue your Chrome tabs with cached previews and Liquid Glass UI",
+  "main": "out/main/index.js",
+  "scripts": {
+    "dev": "electron-vite dev",
+    "build": "electron-vite build",
+    "preview": "electron-vite preview",
+    "rebuild": "npx electron-rebuild -f -w better-sqlite3",
+    "package": "electron-builder --mac"
+  },
+  "keywords": [],
+  "author": "Cris",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron/rebuild": "^4.0.3",
+    "@types/better-sqlite3": "^7.6.13",
+    "electron": "^41.0.4",
+    "typescript": "^6.0.2"
+  },
+  "dependencies": {
+    "better-sqlite3": "^12.8.0",
+    "electron-vite": "^5.0.0"
+  }
+}
