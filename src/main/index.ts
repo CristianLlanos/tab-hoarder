@@ -10,6 +10,7 @@ let mainWindow: BrowserWindow | null = null
 
 function createWindow(): void {
   mainWindow = new BrowserWindow({
+    icon: join(__dirname, '../../resources/icon.png'),
     width: 1400,
     height: 900,
     minWidth: 900,
@@ -52,7 +53,15 @@ function createWindow(): void {
   })
 }
 
+// Set app name (shows in dock and menu bar)
+app.setName('Tab Hoarder')
+
 app.whenReady().then(() => {
+  // Set dock icon on macOS
+  if (process.platform === 'darwin') {
+    app.dock.setIcon(join(__dirname, '../../resources/icon.png'))
+  }
+
   initStorage()
   initDatabase()
   registerIpcHandlers()

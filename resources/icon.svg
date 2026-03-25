@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a2a4a"/>
+      <stop offset="50%" stop-color="#0f1f3c"/>
+      <stop offset="100%" stop-color="#0a1628"/>
+    </linearGradient>
+    <linearGradient id="glassShine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.25)"/>
+      <stop offset="40%" stop-color="rgba(255,255,255,0.05)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0)"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="rgba(255,255,255,0.18)"/>
+      <stop offset="100%" stop-color="rgba(255,255,255,0.06)"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.6">
+      <stop offset="0%" stop-color="rgba(0,122,255,0.3)"/>
+      <stop offset="100%" stop-color="rgba(0,122,255,0)"/>
+    </radialGradient>
+    <filter id="s" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="rgba(0,0,0,0.3)"/>
+    </filter>
+    <!-- macOS squircle path -->
+    <clipPath id="squircle">
+      <path d="M512,24 C649,24 694,24 744,38 C780,48 811,65 838,92 C865,119 882,150 892,186 C906,236 906,281 906,418 L906,606 C906,743 906,788 892,838 C882,874 865,905 838,932 C811,959 780,976 744,986 C694,1000 649,1000 512,1000 C375,1000 330,1000 280,986 C244,976 213,959 186,932 C159,905 142,874 132,838 C118,788 118,743 118,606 L118,418 C118,281 118,236 132,186 C142,150 159,119 186,92 C213,65 244,48 280,38 C330,24 375,24 512,24 Z"/>
+    </clipPath>
+  </defs>
+
+  <!-- Everything clipped to squircle for transparent corners -->
+  <g clip-path="url(#squircle)">
+    <!-- Background -->
+    <rect width="1024" height="1024" fill="url(#bg)"/>
+    <rect width="1024" height="1024" fill="url(#glow)"/>
+    <rect width="1024" height="512" fill="url(#glassShine)"/>
+
+    <!-- Search bar -->
+    <rect x="188" y="140" width="648" height="48" rx="14" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+    <circle cx="218" cy="164" r="10" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="2.5"/>
+    <line x1="226" y1="172" x2="232" y2="178" stroke="rgba(255,255,255,0.3)" stroke-width="2.5" stroke-linecap="round"/>
+    <rect x="244" y="159" width="100" height="10" rx="5" fill="rgba(255,255,255,0.12)"/>
+
+    <!-- Row 1 -->
+    <g filter="url(#s)">
+      <rect x="188" y="218" width="200" height="140" rx="20" fill="url(#card)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+      <rect x="188" y="218" width="200" height="88" rx="20" fill="rgba(0,122,255,0.15)"/>
+      <rect x="188" y="286" width="200" height="20" rx="0" fill="rgba(0,122,255,0.15)"/>
+      <rect x="204" y="318" width="120" height="8" rx="4" fill="rgba(255,255,255,0.25)"/>
+      <rect x="204" y="334" width="80" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+    </g>
+    <g filter="url(#s)">
+      <rect x="412" y="218" width="200" height="140" rx="20" fill="url(#card)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+      <rect x="412" y="218" width="200" height="88" rx="20" fill="rgba(48,209,88,0.15)"/>
+      <rect x="412" y="286" width="200" height="20" rx="0" fill="rgba(48,209,88,0.15)"/>
+      <rect x="428" y="318" width="140" height="8" rx="4" fill="rgba(255,255,255,0.25)"/>
+      <rect x="428" y="334" width="90" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+    </g>
+    <g filter="url(#s)">
+      <rect x="636" y="218" width="200" height="140" rx="20" fill="url(#card)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+      <rect x="636" y="218" width="200" height="88" rx="20" fill="rgba(191,90,242,0.15)"/>
+      <rect x="636" y="286" width="200" height="20" rx="0" fill="rgba(191,90,242,0.15)"/>
+      <rect x="652" y="318" width="100" height="8" rx="4" fill="rgba(255,255,255,0.25)"/>
+      <rect x="652" y="334" width="70" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+    </g>
+
+    <!-- Row 2 -->
+    <g filter="url(#s)">
+      <rect x="188" y="386" width="200" height="140" rx="20" fill="url(#card)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+      <rect x="188" y="386" width="200" height="88" rx="20" fill="rgba(255,159,10,0.15)"/>
+      <rect x="188" y="454" width="200" height="20" rx="0" fill="rgba(255,159,10,0.15)"/>
+      <rect x="204" y="486" width="130" height="8" rx="4" fill="rgba(255,255,255,0.25)"/>
+      <rect x="204" y="502" width="85" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+    </g>
+    <g filter="url(#s)">
+      <rect x="412" y="386" width="200" height="140" rx="20" fill="url(#card)" stroke="rgba(255,255,255,0.15)" stroke-width="2"/>
+      <rect x="412" y="386" width="200" height="88" rx="20" fill="rgba(0,122,255,0.25)"/>
+      <rect x="412" y="454" width="200" height="20" rx="0" fill="rgba(0,122,255,0.25)"/>
+      <rect x="428" y="486" width="110" height="8" rx="4" fill="rgba(255,255,255,0.35)"/>
+      <rect x="428" y="502" width="75" height="6" rx="3" fill="rgba(255,255,255,0.18)"/>
+    </g>
+    <g filter="url(#s)">
+      <rect x="636" y="386" width="200" height="140" rx="20" fill="url(#card)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+      <rect x="636" y="386" width="200" height="88" rx="20" fill="rgba(255,55,95,0.15)"/>
+      <rect x="636" y="454" width="200" height="20" rx="0" fill="rgba(255,55,95,0.15)"/>
+      <rect x="652" y="486" width="140" height="8" rx="4" fill="rgba(255,255,255,0.25)"/>
+      <rect x="652" y="502" width="60" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+    </g>
+
+    <!-- Row 3 -->
+    <g filter="url(#s)">
+      <rect x="188" y="554" width="200" height="140" rx="20" fill="url(#card)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+      <rect x="188" y="554" width="200" height="88" rx="20" fill="rgba(100,210,255,0.15)"/>
+      <rect x="188" y="622" width="200" height="20" rx="0" fill="rgba(100,210,255,0.15)"/>
+      <rect x="204" y="654" width="100" height="8" rx="4" fill="rgba(255,255,255,0.25)"/>
+      <rect x="204" y="670" width="70" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+    </g>
+    <g filter="url(#s)">
+      <rect x="412" y="554" width="200" height="140" rx="20" fill="url(#card)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+      <rect x="412" y="554" width="200" height="88" rx="20" fill="rgba(255,214,10,0.12)"/>
+      <rect x="412" y="622" width="200" height="20" rx="0" fill="rgba(255,214,10,0.12)"/>
+      <rect x="428" y="654" width="125" height="8" rx="4" fill="rgba(255,255,255,0.25)"/>
+      <rect x="428" y="670" width="80" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+    </g>
+    <g filter="url(#s)">
+      <rect x="636" y="554" width="200" height="140" rx="20" fill="url(#card)" stroke="rgba(255,255,255,0.12)" stroke-width="1.5"/>
+      <rect x="636" y="554" width="200" height="88" rx="20" fill="rgba(48,209,88,0.12)"/>
+      <rect x="636" y="622" width="200" height="20" rx="0" fill="rgba(48,209,88,0.12)"/>
+      <rect x="652" y="654" width="115" height="8" rx="4" fill="rgba(255,255,255,0.25)"/>
+      <rect x="652" y="670" width="65" height="6" rx="3" fill="rgba(255,255,255,0.12)"/>
+    </g>
+
+    <!-- Bottom accent -->
+    <rect x="188" y="730" width="648" height="56" rx="16" fill="rgba(0,122,255,0.12)" stroke="rgba(0,122,255,0.2)" stroke-width="1.5"/>
+    <rect x="220" y="750" width="160" height="10" rx="5" fill="rgba(0,122,255,0.35)"/>
+    <rect x="220" y="766" width="100" height="6" rx="3" fill="rgba(0,122,255,0.2)"/>
+
+    <!-- Border -->
+    <path d="M512,24 C649,24 694,24 744,38 C780,48 811,65 838,92 C865,119 882,150 892,186 C906,236 906,281 906,418 L906,606 C906,743 906,788 892,838 C882,874 865,905 838,932 C811,959 780,976 744,986 C694,1000 649,1000 512,1000 C375,1000 330,1000 280,986 C244,976 213,959 186,932 C159,905 142,874 132,838 C118,788 118,743 118,606 L118,418 C118,281 118,236 132,186 C142,150 159,119 186,92 C213,65 244,48 280,38 C330,24 375,24 512,24 Z" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="2"/>
+  </g>
+</svg>

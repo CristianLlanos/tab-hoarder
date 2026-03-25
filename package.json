@@ -7,8 +7,10 @@
     "dev": "electron-vite dev",
     "build": "electron-vite build",
     "preview": "electron-vite preview",
-    "rebuild": "npx electron-rebuild -f -w better-sqlite3",
-    "package": "electron-builder --mac"
+    "rebuild": "npx @electron/rebuild -f -w better-sqlite3",
+    "package": "electron-vite build && electron-builder --mac --dir",
+    "package:dmg": "electron-vite build && electron-builder --mac",
+    "start": "open \"release/mac-arm64/Tab Hoarder.app\""
   },
   "keywords": [],
   "author": "Cris",
@@ -17,6 +19,7 @@
     "@electron/rebuild": "^4.0.3",
     "@types/better-sqlite3": "^7.6.13",
     "electron": "^41.0.4",
+    "electron-builder": "^26.8.1",
     "typescript": "^6.0.2"
   },
   "dependencies": {
